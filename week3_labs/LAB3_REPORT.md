@@ -1,6 +1,6 @@
 # Lab 3 Report: Flet GUI Development
 
-**Student Name:** John Renzzo C. Montenegro
+**Student Name:** John Renzzo C. Montenegro\
 **Student ID:** 231002278 \
 **Section:** 3A\
 **Date:** September 22, 2025
