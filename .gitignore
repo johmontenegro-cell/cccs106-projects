@@ -3,6 +3,7 @@ __pycache__/
 .vscode/ 
 *.log 
 .env 
+.venv
 cccs106_env_montenegro/
 *.zip
 
