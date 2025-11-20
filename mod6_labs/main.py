@@ -22,7 +22,7 @@ class WeatherApp:
         self.chart_selection = "temp" # Track what chart we are showing
         
         # History Setup
-        self.history_file = Path("search_history.json")
+        self.history_file = Path("mod6_labs/search_history.json")
         self.search_history = self.load_history()
         
         self.setup_page()
