@@ -486,9 +486,14 @@ class WeatherApp:
         self.page.update()
 
     def toggle_theme(self, e):
+    # Toggle State
         self.page.theme_mode = ft.ThemeMode.DARK if self.page.theme_mode == ft.ThemeMode.LIGHT else ft.ThemeMode.LIGHT
         self.theme_button.icon = ft.Icons.LIGHT_MODE if self.page.theme_mode == ft.ThemeMode.DARK else ft.Icons.DARK_MODE
         self.page.update()
+    
+    # Force Redraw if data exists to apply new theme colors
+        if self.current_weather_data and self.forecast_data:
+            self.page.run_task(lambda: self.display_data(self.current_weather_data, self.forecast_data))
 
 def main(page: ft.Page):
     WeatherApp(page)

@@ -33,10 +33,28 @@ This weather app fetches and displays a user input address' current weather fore
 3. **Weather Condition Icons and Colors**
    - Changes background colors based on the weather forecast.
    - This feature makes it visually easier to determine the weather forecast without reading too much data on the screen.
-   - Color doesn't change.
+   - Color doesn't change. Forced redraw theme to apply new colors.
+
+4. **Current Location Weather**
+   - Detects current location of the user via IP-based geolocation.
+   - This features allow the users to know the forecast of their current location without the hassle of typing their current address.
+   - No dedicated button to detect user's current location. Used httpx to fetch ipapi data to provide the user's current location.
+
+5. **5-Day Weather Forecast**
+   - Displays weather forecast for the next five days on the desired location.
+   - This features allows weather predictability and preparedness for its users.
+   - The icons were not showing up. Used color=theme["icon"] to ensure visibility even when themes are toggled.
+
+6. **Weather Charts and Graphs**
+   - Displays the current location's Temperature, Humidity, and Wind Speed in a graph form.
+   - This feature visually allows the user to record the data of the past and current forecast to summarize complex data.
+   - The texts were upside down. Moved title out of the chart axis to avoid text from flipping again.
 
 ## Screenshots
-[Add 3-5 screenshots showing different aspects of your app]
+![Current Forecast](./screenshots/current_forecast.png)
+![5 Day Forecast](./screenshots/5_day_forecast.png)
+![Theme Toggle and Forecast Graph](./screenshots/theme_toggle.png)
+![Unit Conversion](./screenshots/unit_conversion.png)
 
 ## Installation
 
